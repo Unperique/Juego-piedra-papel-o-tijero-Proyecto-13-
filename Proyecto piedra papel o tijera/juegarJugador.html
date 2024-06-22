@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+    <link rel="stylesheet" href="stylesjj.css">
+</head>
+<body>
+    <!-- Contenedor principal del juego -->
+    <div class="contenedor-juego">
+        <!-- Contenedor para el marcador -->
+        <div class="marcador">
+            <!-- Puntajes de cada jugador y empates -->
+            <div class="puntaje">
+                <p>Jugador 1: <span id="puntaje-jugador1">0</span></p>
+            </div>
+            <div class="puntaje">
+                <p>Jugador 2: <span id="puntaje-jugador2">0</span></p>
+            </div>
+            <div class="puntaje">
+                <p>Empates: <span id="puntaje-empates">0</span></p>
+            </div>
+        </div>
+
+        <!-- Contenedor para las selecciones de los jugadores -->
+        <div class="selecciones">
+            <!-- Selección del jugador 1 -->
+            <div class="seleccion-jugador">
+                <p>Jugador 1:</p>
+                <!-- Imagen de la selección del jugador 1 -->
+                <img src="Image/piedra.png" alt="Elección Jugador 1" id="imagen-eleccion-jugador1">
+            </div>
+            <div class="vs">
+                <!-- Separador entre los jugadores -->
+                <p>VS</p>
+            </div>
+            <!-- Selección del jugador 2 -->
+            <div class="seleccion-jugador">
+                <p>Jugador 2:</p>
+                <!-- Imagen de la selección del jugador 2 -->
+                <img src="Image/piedra.png" alt="Elección Jugador 2" id="imagen-eleccion-jugador2">
+            </div>
+        </div>
+
+        <!-- Contenedor para las opciones de elección -->
+        <div class="opciones">
+            <!-- Botones para las opciones de elección del jugador 1 -->
+            <button class="btn" onclick="jugarJuego('jugador1', 'piedra')">
+                <!-- Imagen de la opción "piedra" -->
+                <img src="Image/piedra.png" alt="Piedra">
+            </button>
+            <button class="btn" onclick="jugarJuego('jugador1', 'papel')">
+                <!-- Imagen de la opción "papel" -->
+                <img src="Image/papel.png" alt="Papel">
+            </button>
+            <button class="btn" onclick="jugarJuego('jugador1', 'tijeras')">
+                <!-- Imagen de la opción "tijeras" -->
+                <img src="Image/tijeras.png" alt="Tijeras">
+            </button>
+        </div>
+
+        <!-- Contenedor para las opciones de elección del jugador 2 -->
+        <div class="opciones">
+            <!-- Botones para las opciones de elección del jugador 2 -->
+            <button class="btn" onclick="jugarJuego('jugador2', 'piedra')">
+                <!-- Imagen de la opción "piedra" -->
+                <img src="Image/piedra.png" alt="Piedra">
+            </button>
+            <button class="btn" onclick="jugarJuego('jugador2', 'papel')">
+                <!-- Imagen de la opción "papel" -->
+                <img src="Image/papel.png" alt="Papel">
+            </button>
+            <button class="btn" onclick="jugarJuego('jugador2', 'tijeras')">
+                <!-- Imagen de la opción "tijeras" -->
+                <img src="Image/tijeras.png" alt="Tijeras">
+            </button>
+        </div>
+
+        <!-- Contenedor para el resultado del juego -->
+        <div class="resultado">
+            <!-- Mensaje de inicio del juego -->
+            <p>Selecciona una opción para empezar...</p>
+        </div>
+        <!-- Contenedor para las acciones del juego -->
+        <div class="acciones">
+            <!-- Botón para reiniciar el juego -->
+            <a href="juegarJugador.html" class="btn">Reiniciar</a>
+            <!-- Botón para volver a la página de inicio -->
+            <a href="index.html" class="btn">Volver</a>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript para el juego -->
+    <script src="scriptjj.js"></script>
+</body>
+</html>

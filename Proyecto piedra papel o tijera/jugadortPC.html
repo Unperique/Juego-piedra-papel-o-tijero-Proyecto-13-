@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal del juego -->
+    <div class="contenedor-juego">
+        <!-- Contenedor para el marcador -->
+        <div class="marcador">
+            <!-- Puntajes de cada jugador y empates -->
+            <div class="puntaje">
+                <!-- Puntaje del jugador -->
+                <p>Jugador: <span id="puntaje-jugador">0</span></p>
+            </div>
+            <div class="puntaje">
+                <!-- Puntaje de la computadora -->
+                <p>Computadora: <span id="puntaje-computadora">0</span></p>
+            </div>
+            <div class="puntaje">
+                <!-- Puntaje de los empates -->
+                <p>Empates: <span id="puntaje-empates">0</span></p>
+            </div>
+        </div>
+
+        <!-- Contenedor para las selecciones de los jugadores -->
+        <div class="selecciones">
+            <!-- Selección del jugador -->
+            <div class="seleccion-jugador">
+                <p>Tu elección:</p>
+                <!-- Imagen de la selección del jugador -->
+                <img src="Image/piedra.png" alt="Tu elección" id="imagen-eleccion-jugador">
+            </div>
+            <div class="vs">
+                <!-- Separador entre los jugadores -->
+                <p>VS</p>
+            </div>
+            <!-- Selección de la computadora -->
+            <div class="seleccion-computadora">
+                <p>Selección de la computadora:</p>
+                <!-- Imagen de la selección de la computadora -->
+                <img src="Image/piedra.png" alt="Selección de la computadora" id="imagen-eleccion-computadora">
+            </div>
+        </div>
+
+        <!-- Contenedor para las opciones de elección -->
+        <div class="opciones">
+            <!-- Botones para las opciones de elección del jugador -->
+            <button class="btn" onclick="jugarJuego('piedra')">
+                <!-- Imagen de la opción "piedra" -->
+                <img src="Image/piedra.png" alt="Piedra">
+            </button>
+            <button class="btn" onclick="jugarJuego('papel')">
+                <!-- Imagen de la opción "papel" -->
+                <img src="Image/papel.png" alt="Papel">
+            </button>
+            <button class="btn" onclick="jugarJuego('tijeras')">
+                <!-- Imagen de la opción "tijeras" -->
+                <img src="Image/tijeras.png" alt="Tijeras">
+            </button>
+        </div>
+
+        <!-- Contenedor para el resultado del juego -->
+        <div class="resultado">
+            <!-- Mensaje de inicio del juego -->
+            <p>Selecciona una opción para empezar...</p>
+        </div>
+
+        <!-- Contenedor para las acciones del juego -->
+        <div class="acciones">
+            <!-- Botón para reiniciar el juego -->
+            <a href="jugadortPC.html" class="btn">Reiniciar</a>
+            <!-- Botón para volver a la página de inicio -->
+            <a href="index.html" class="btn">Volver</a>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript para el juego -->
+    <script src="script.js"></script>
+</body>
+</html>
+

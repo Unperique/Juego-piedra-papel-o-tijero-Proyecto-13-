@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif; /* Usa una fuente sans-serif para el texto */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Toma el 100% del viewport height */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.container {
+    margin-top: 100px; /* Margen superior de 100px */
+}
+
+.welcome-text {
+    font-size: 24px; /* Tamaño de fuente de 24px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+.button {
+    display: inline-block; /* Se muestra como bloque en línea */
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    text-decoration: none; /* Sin decoración de texto */
+    border-radius: 5px; /* Borde redondeado */
+    margin: 10px; /* Margen externo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+.button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.contenedor-juego {
+    text-align: center; /* Centra el texto */
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    width: 90%; /* Ancho del contenedor (90% del padre) */
+}

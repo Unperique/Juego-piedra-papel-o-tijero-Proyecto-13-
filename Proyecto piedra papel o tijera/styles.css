@@ -1,0 +1,173 @@
+body {
+    font-family: sans-serif; /* Usa una fuente sans-serif para el texto */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Toma el 100% del viewport height */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    margin: 0; /* Elimina el margen predeterminado */
+    overflow: auto; /* Evita la barra de desplazamiento horizontal */
+}
+
+.contenedor-juego {
+    text-align: center; /* Centra el texto */
+    align-items: center; /* Centra verticalmente los elementos internos */
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    width: 90%; /* Ancho del contenedor (90% del padre) */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    height: 90%; /* Altura 100% del contenedor padre (body en este caso) */
+}
+
+/* Estilos para el título h1 */
+h1 {
+    color: #333333; /* Color del texto gris oscuro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el marcador */
+.marcador {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 20px; /* Margen inferior */
+    flex-wrap: wrap; /* Envuelve los elementos si no caben en una línea */
+}
+
+/* Estilos para el puntaje */
+.puntaje {
+    margin: 10px 20px; /* Margen interno */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #333333; /* Color del texto gris oscuro */
+}
+
+/* Estilos para las selecciones (jugador y computadora) */
+.selecciones {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px; /* Margen inferior */
+    flex-wrap: nowrap; /* No envuelve los elementos */
+}
+
+.seleccion-jugador, .seleccion-computadora {
+    text-align: center; /* Centra el texto */
+    margin: 10px 20px; /* Margen interno */
+}
+
+.seleccion-jugador p, .seleccion-computadora p {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #666666; /* Color del texto gris */
+}
+
+/* Estilos para el VS */
+.vs {
+    font-size: 24px; /* Tamaño de fuente */
+    margin: 0 20px; /* Margen izquierdo y derecho */
+    color: #333333; /* Color del texto gris oscuro */
+    flex-shrink: 0; /* No se encoge en flexbox */
+}
+
+/* Estilos para las opciones de botones */
+.opciones {
+    margin-top: 20px; /* Margen superior */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Envuelve las opciones */
+}
+
+/* Estilos generales para los botones */
+.btn {
+    padding: 0; /* Elimina el relleno por defecto */
+    margin: 10px 10px; /* Margen interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: none; /* Sin borde */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.btn img {
+    width: 80px; /* Ancho de la imagen dentro del botón */
+    height: 80px; /* Altura de la imagen dentro del botón */
+    border-radius: 50%; /* Borde redondeado */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+}
+
+.btn:hover img {
+    transform: scale(1.1); /* Escala la imagen al pasar el ratón por encima */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Estilos para el resultado del juego */
+.resultado {
+    margin-top: 20px; /* Margen superior */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333333; /* Color del texto gris oscuro */
+}
+
+/* Estilos para las acciones (botones de reinicio, etc.) */
+.acciones {
+    margin-top: 20px; /* Margen superior */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.acciones .btn {
+    margin: 0 10px; /* Margen interno */
+    padding: 10px 20px; /* Relleno interno */
+    text-decoration: none; /* Sin decoración de texto */
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.acciones .btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+@media (max-width: 800px) {
+    .contenedor-juego {
+        padding: 20px; /* Ajusta el espaciado interno */
+    }
+
+    .marcador {
+        flex-direction: column; /* Cambia a disposición de columna */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .puntaje {
+        margin: 5px 0; /* Ajusta el margen interno */
+        font-size: 18px; /* Ajusta el tamaño de fuente */
+    }
+
+    .selecciones {
+        flex-direction: column; /* Cambia a disposición de columna */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .seleccion-jugador, .seleccion-computadora {
+        margin: 10px 0; /* Ajusta el margen interno */
+    }
+
+    .vs {
+        font-size: 20px; /* Ajusta el tamaño de fuente */
+        margin: 10px 0; /* Ajusta el margen superior e inferior */
+    }
+
+    .btn img {
+        width: 60px; /* Ajusta el ancho de la imagen para pantallas pequeñas */
+        height: 60px; /* Ajusta la altura de la imagen para pantallas pequeñas */
+    }
+
+    .resultado {
+        font-size: 20px; /* Ajusta el tamaño de fuente */
+    }
+}
+
